@@ -50,7 +50,7 @@ namespace loops
         {
             for (int i = 0; i < 20; i++)
             {
-                pictureBox1.Location = new Point(pictureBox1.Location.X + 14.1, pictureBox1.Location.Y);
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 18, pictureBox1.Location.Y);
                 await Task.Delay(50);
             }
             for(int i = 0; i < 20; i++)
