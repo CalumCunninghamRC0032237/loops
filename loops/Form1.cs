@@ -17,14 +17,54 @@ namespace loops
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 0, < 4, i++)
+            for (int i = 0; i < 20; i++)
             {
-                pictureBox1.Location = new Point(pictureBox1.Location x + 4, pictureBox1, Location.Y);
-                await Task
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 20, pictureBox1.Location.Y);
+                await Task.Delay(50);
             }
-                
+
+            for (int i = 0; i < 20; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y+20);
+                await Task.Delay(50);
+            }
+            {
+                for (int i = 0; i < 20; i++)
+                {
+                    pictureBox1.Location = new Point(pictureBox1.Location.X - 20, pictureBox1.Location.Y);
+                    await Task.Delay(50);
+                }
+                {
+                    for (int i = 0; i < 20; i++)
+                    {
+                      pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y-20);
+                      await Task.Delay(50);
+                    }
+                }
+            }
         }
+
+        private async void button2_ClickAsync(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 20; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 14.1, pictureBox1.Location.Y);
+                await Task.Delay(50);
+            }
+            for(int i = 0; i < 20; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X  -10, pictureBox1.Location.Y+10);
+                await Task.Delay(50);
+            }
+            for(int i = 0; i < 20; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X - 10, pictureBox1.Location.Y -10);
+                await Task.Delay(50);
+            }
+        
+        }
+        
     }
 }
